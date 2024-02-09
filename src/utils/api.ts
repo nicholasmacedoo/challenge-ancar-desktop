@@ -7,7 +7,7 @@ const api = axios.create({
 api.interceptors.request.use(
   (config) => {
     config.headers.Authorization = `Bearer ${localStorage.getItem(
-      '@amoraid:token',
+      '@ancar-challenge:token',
     )}`
     return config
   },

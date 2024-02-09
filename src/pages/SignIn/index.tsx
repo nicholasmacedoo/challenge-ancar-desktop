@@ -18,7 +18,7 @@ export function SignInPage() {
         try {
             await signIn(data)
 
-            navigate('/quizzes')
+            navigate('/app/quizzes')
 
             toast({
                 title: 'Login efetuado com sucesso!',
