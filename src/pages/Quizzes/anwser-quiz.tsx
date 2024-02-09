@@ -75,7 +75,7 @@ export function AnswerQuiz() {
                                             <form onSubmit={handleSubmit(onSubmit)}>
                                                 <span className="text-xs block mb-2">Resposta:</span>
                                                 <input type="hidden" value={pergunta.id} {...register('question_id')} />
-                                                <Input placeholder="resposta..." {...register} />
+                                                <Input placeholder="resposta..." {...register('descricao')} />
                                                 <div className="flex justify-end mt-4">
                                                     <Button>Responder</Button>
                                                 </div>
