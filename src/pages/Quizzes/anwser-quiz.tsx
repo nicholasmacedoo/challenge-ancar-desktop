@@ -87,7 +87,7 @@ export function AnswerQuiz() {
                             {data?.perguntas.length === 0 && (
                                 <Card>
                                     <CardContent className="flex items-center justify-center">
-                                        <span className="font-mono text-muted-foreground">
+                                        <span className="font-mono text-muted-foreground flex items-center flex-col pt-4">
                                             <HardDrive size={16} className="mr-4" />
                                             Nenhum pergunta cadastrada ao questionario!
                                         </span>
