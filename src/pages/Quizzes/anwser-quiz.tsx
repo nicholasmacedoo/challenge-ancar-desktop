@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { useToast } from "@/components/ui/use-toast"
 import api from "@/utils/api"
-import { ChevronLeft } from "lucide-react"
+import { ChevronLeft, HardDrive } from "lucide-react"
 import { useForm } from "react-hook-form"
 import { useQuery } from "react-query"
 import { useNavigate, useParams } from "react-router-dom"
@@ -84,6 +84,16 @@ export function AnswerQuiz() {
                                     </Card>
                                 ))
                             }
+                            {data?.perguntas.length === 0 && (
+                                <Card>
+                                    <CardContent className="flex items-center justify-center">
+                                        <span className="font-mono text-muted">
+                                            <HardDrive size={16} className="mr-4" />
+                                            Nenhum pergunta cadastrada ao questionario!
+                                        </span>
+                                    </CardContent>
+                                </Card>
+                            )}
                         </div>
                     </>
                 )
