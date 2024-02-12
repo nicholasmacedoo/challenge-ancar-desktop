@@ -15,7 +15,7 @@ interface IQuizzes {
 
 export function QuizzesPage() {
     const { signOut } = useAuth()
-    const { data, isLoading, count, limit } = useQueryPagination<IQuizzes>({
+    const { data, isLoading, count, limit, nextPage, previousPage } = useQueryPagination<IQuizzes>({
         queryKey: 'quizzes',
         url: URL_API,
     })
@@ -56,8 +56,12 @@ export function QuizzesPage() {
                 {
                     enabledNext && (
                         <div className="flex justify-end gap-6 mt-6">
-                            <Button><ChevronLeft size={16} /></Button>
-                            <Button><ChevronRight size={16} /></Button>
+                            <Button onClick={previousPage}>
+                                <ChevronLeft size={16} />
+                            </Button>
+                            <Button onClick={nextPage}>
+                                <ChevronRight size={16} />
+                            </Button>
                         </div>
                     )
                 }
