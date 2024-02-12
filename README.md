@@ -33,3 +33,11 @@ $ npm run build && npm run preview
 
 - Autor - [Nicholas Macedo](https://www.linkedin.com/in/nicholasmacedoo/)
 
+### Tecnologias
+
+- [ElectronJS](https://www.electronjs.org/pt/)
+- [Vite](https://electron-vite.github.io/)
+- [ReactJS](https://react.dev/)
+- [Tailwindcss](https://tailwindcss.com/)
+- [Shadcn,ui](https://ui.shadcn.com/)
+- [React Query](https://tanstack.com/query/v3/)
